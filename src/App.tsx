@@ -14,7 +14,7 @@ function App() {
           <GlobalStyle></GlobalStyle>
           <Rotas />
           <Footer></Footer>
-          {/* <Cart></Cart> */}
+          {<Cart></Cart>}
         </div>
       </BrowserRouter>
     </Provider>

@@ -218,7 +218,7 @@ const Cart = () => {
         <Prices>
           Valor total <span>{formataPreco(getTotal())}</span>
         </Prices>
-        <Button onClick={goToPurchase}>Continuar com a entrega</Button>
+        {/* <Button onClick={goToPurchase}>Continuar com a entrega</Button> */}
       </Sidebar>
       <Sidebar className={purchaseData ? '' : 'is-closed'}>
         <Title>Entrega</Title>

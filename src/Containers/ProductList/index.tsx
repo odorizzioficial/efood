@@ -73,18 +73,18 @@ const ProductList = () => {
         </List>
       </div>
       {selectedProduct && (
-        <Modal className={modal.isVisible ? '' : ''}>
+        <Modal className={modal.isVisible ? 'active' : ''}>
           <ModalContent className="container">
             <ModalContainer>
-              {/* <img src={selectedProduct.foto} alt="" /> */}
+              <img src={selectedProduct.foto} alt="" />
               <div>
-                {/* <h4>{selectedProduct.nome}</h4> */}
+                <h4>{selectedProduct.nome}</h4>
 
-                {/* <p>{selectedProduct.descricao}</p>
-                <span>{selectedProduct.porcao}</span> */}
-                {/* <button onClick={addToCart}>
+                <p>{selectedProduct.descricao}</p>
+                <span>{selectedProduct.porcao}</span>
+                <button onClick={addToCart}>
                   Adicionar ao carrinho {formataPreco(selectedProduct.preco)}
-                </button> */}
+                </button>
               </div>
             </ModalContainer>
             <Close
