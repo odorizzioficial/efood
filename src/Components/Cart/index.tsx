@@ -218,6 +218,8 @@ const Cart = () => {
         <Prices>
           Valor total <span>{formataPreco(getTotal())}</span>
         </Prices>
+
+        {/* Preço alterar o botão para compra */}
         {/* <Button onClick={goToPurchase}>Continuar com a entrega</Button> */}
       </Sidebar>
       <Sidebar className={purchaseData ? '' : 'is-closed'}>
