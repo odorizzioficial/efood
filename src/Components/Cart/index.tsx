@@ -220,7 +220,7 @@ const Cart = () => {
         </Prices>
 
         {/* Preço alterar o botão para compra */}
-        {/* <Button onClick={goToPurchase}>Continuar com a entrega</Button> */}
+        <Button onClick={goToPurchase}>Continuar com a entrega</Button>
       </Sidebar>
       <Sidebar className={purchaseData ? '' : 'is-closed'}>
         <Title>Entrega</Title>
@@ -301,9 +301,11 @@ const Cart = () => {
         ) : (
           ''
         )}
-        <Button type="button" onClick={backToCart}>
+
+        {/* Teste do botão finalizar carrinho com endereço */}
+        {/* <Button type="button" onClick={backToCart}>
           Voltar para carrinho
-        </Button>
+        </Button> */}
       </Sidebar>
       <Sidebar className={paymentData ? '' : 'is-closed'}>
         <Title>Pagamento - Valor a pagar {formataPreco(getTotal())}</Title>
