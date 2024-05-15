@@ -303,9 +303,9 @@ const Cart = () => {
         )}
 
         {/* Teste do botão finalizar carrinho com endereço */}
-        {/* <Button type="button" onClick={backToCart}>
+        <Button type="button" onClick={backToCart}>
           Voltar para carrinho
-        </Button> */}
+        </Button>
       </Sidebar>
       <Sidebar className={paymentData ? '' : 'is-closed'}>
         <Title>Pagamento - Valor a pagar {formataPreco(getTotal())}</Title>
