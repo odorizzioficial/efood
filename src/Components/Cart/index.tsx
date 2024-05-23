@@ -231,6 +231,7 @@ const Cart = () => {
               type="text"
               name="fullName"
               id="fullName"
+              maxLength={30}
               onChange={form.handleChange}
               onBlur={form.handleBlur}
               className={checkInput('fullName') ? 'error' : ''}
@@ -243,6 +244,7 @@ const Cart = () => {
               type="text"
               name="address"
               id="address"
+              maxLength={30}
               onChange={form.handleChange}
               onBlur={form.handleBlur}
               className={checkInput('address') ? 'error' : ''}
@@ -254,6 +256,7 @@ const Cart = () => {
               type="text"
               name="city"
               id="city"
+              maxLength={30}
               onChange={form.handleChange}
               onBlur={form.handleBlur}
               className={checkInput('city') ? 'error' : ''}
@@ -266,6 +269,8 @@ const Cart = () => {
                 type="text"
                 name="CEP"
                 id="CEP"
+                maxLength={9}
+                pattern="\d*"
                 onChange={form.handleChange}
                 onBlur={form.handleBlur}
                 className={checkInput('CEP') ? 'error' : ''}
@@ -277,6 +282,8 @@ const Cart = () => {
                 type="text"
                 name="number"
                 id="number"
+                maxLength={3}
+                pattern="\d*"
                 onChange={form.handleChange}
                 onBlur={form.handleBlur}
                 className={checkInput('number') ? 'error' : ''}
@@ -289,6 +296,7 @@ const Cart = () => {
               type="text"
               name="reference"
               id="reference"
+              maxLength={30}
               onChange={form.handleChange}
               onBlur={form.handleBlur}
             />
@@ -316,6 +324,7 @@ const Cart = () => {
               type="text"
               name="cardName"
               id="cardName"
+              maxLength={30}
               onChange={form.handleChange}
               onBlur={form.handleBlur}
               className={checkInput('cardName') ? 'error' : ''}
@@ -325,9 +334,11 @@ const Cart = () => {
             <div>
               <label htmlFor="cardNumber">Número do cartão</label>
               <input
-                type="number"
+                type="text"
                 name="cardNumber"
                 id="cardNumber"
+                maxLength={16}
+                pattern="\d*"
                 onChange={form.handleChange}
                 onBlur={form.handleBlur}
                 className={checkInput('cardNumber') ? 'error' : ''}
@@ -339,6 +350,8 @@ const Cart = () => {
                 type="text"
                 name="cvv"
                 id="cvv"
+                maxLength={3}
+                pattern="\d*"
                 onChange={form.handleChange}
                 onBlur={form.handleBlur}
                 className={checkInput('cvv') ? 'error' : ''}
@@ -352,6 +365,8 @@ const Cart = () => {
                 type="text"
                 name="expiresMonth"
                 id="expiresMonth"
+                maxLength={5}
+                pattern="\d*"
                 onChange={form.handleChange}
                 onBlur={form.handleBlur}
                 className={checkInput('expiresMonth') ? 'error' : ''}
@@ -363,6 +378,8 @@ const Cart = () => {
                 type="text"
                 name="expiresYear"
                 id="expiresYear"
+                maxLength={4}
+                pattern="\d*"
                 onChange={form.handleChange}
                 onBlur={form.handleBlur}
                 className={checkInput('expiresYear') ? 'error' : ''}
