@@ -269,7 +269,7 @@ const Cart = () => {
                 type="text"
                 name="CEP"
                 id="CEP"
-                maxLength={9}
+                maxLength={8}
                 pattern="\d*"
                 onChange={form.handleChange}
                 onBlur={form.handleBlur}
@@ -365,7 +365,7 @@ const Cart = () => {
                 type="text"
                 name="expiresMonth"
                 id="expiresMonth"
-                maxLength={5}
+                maxLength={2}
                 pattern="\d*"
                 onChange={form.handleChange}
                 onBlur={form.handleBlur}
